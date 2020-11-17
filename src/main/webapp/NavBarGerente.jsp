@@ -74,22 +74,22 @@
                                     <li><a href="">Historial de Cambios de un Gerente</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li class="dropdown-header">Transacciones de Clientes</li>
-                                    <li><a href="">Transacciones Monetarias Mayores a un Límite Establecido</a></li>
-                                    <li><a href="">Transacciones Sumadas Mayores a un Límite Establecido</a></li>
+                                    <li><a href="Reporte2_Gerente.jsp">Transacciones Monetarias Mayores a un Límite Establecido</a></li>
+                                    <li><a href="Reporte3_Gerente.jsp">Transacciones Sumadas Mayores a un Límite Establecido</a></li>
                                     <li role="separator" class="divider"></li>
                                     <li class="dropdown-header">Clientes</li>
-                                    <li><a href="">Los 10 Clientes con más Dinero en sus Cuentas</a></li>
+                                    <li><a href="Reporte4_Gerente.jsp">Los 10 Clientes con más Dinero en sus Cuentas</a></li>
                                     <li><a href="">Clientes sin Transacciones en un Intervalo de Tiempo</a></li>
                                     
                                     <li role="separator" class="divider"></li>
                                     
                                     <li class="dropdown-header">Historial de Transacciones</li>
-                                    <li><a href="#">Historial de Transacciones por Cliente</a></li>
+                                    <li><a href="Reporte6_Gerente.jsp">Historial de Transacciones por Cliente</a></li>
 
                                      <li role="separator" class="divider"></li>
                                     
                                     <li class="dropdown-header">Cajeros</li>
-                                    <li><a href="#">Cajeros con más Transacciones en un Intervalo de Tiempo</a></li>
+                                    <li><a href="Reporte7_Gerente.jsp">Cajeros con más Transacciones en un Intervalo de Tiempo</a></li>
 
                                 </ul>
                             </li>

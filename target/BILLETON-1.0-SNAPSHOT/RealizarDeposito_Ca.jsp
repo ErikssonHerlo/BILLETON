@@ -66,6 +66,9 @@
                     <button id="buscarCuenta" class="btn btn-primary" type="submit" name="action" value="buscarCuenta">Buscar</button>
                     
                     <input class="btn" type="reset" value="Eliminar Datos">
+                    <br>
+                    <br>
+                    <a href="InicioCajero.jsp" class="btn btn-primary">Volver al Inicio</a>
                 </CENTER>
 
             </FORM>
@@ -142,7 +145,7 @@
                         <h4>${Informe.codigo}</h4>
                     </div>
                     <div class="form-group col-md-5">
-                        <h3><strong>Nombre del Cliente Propietario: </strong></h3>
+                        <h3><strong>Nombre del Cliente Propietario de la Cuenta: </strong></h3>
                         <h4>${Informe.nombre}</h4>
                     </div>
 
