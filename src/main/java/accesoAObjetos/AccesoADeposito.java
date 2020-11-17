@@ -6,7 +6,7 @@
 package accesoAObjetos;
 
 import conexionMySQL.Conexion;
-import informesDeVisualizacion.InformeDepositos;
+import informesDeVisualizacion.InformeTransacciones;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -105,9 +105,9 @@ public class AccesoADeposito {
        * @param nombre
        * @return 
        */
-      public InformeDepositos informeDeposito(int codigoTransaccion, String nombre){
+      public InformeTransacciones informeDeposito(int codigoTransaccion, String nombre){
         
-        InformeDepositos informe = null;
+        InformeTransacciones informe = null;
  
         try {
             String query = "SELECT Codigo, Cuenta_No_Cuenta,  Monto, Fecha, Hora, Tipo, Cajero_Usuario_Codigo FROM Transaccion WHERE Codigo = ?";
@@ -118,7 +118,7 @@ public class AccesoADeposito {
         rs=enviar.executeQuery();   
         
             while (rs.next()) {
-                informe = new InformeDepositos(rs.getInt("Codigo"),
+                informe = new InformeTransacciones(rs.getInt("Codigo"),
                         rs.getInt("Cuenta_No_Cuenta"),
                         nombre, 
                         rs.getDouble("Monto"),

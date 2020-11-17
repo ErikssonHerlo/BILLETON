@@ -23,7 +23,7 @@
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li class="dropdown"><a href="RealizarDeposito_Ca.jsp">Realizar Déposito</a></li>
-                        <li class="dropdown"><a href="">Realizar Retiro</a></li>
+                            <li class="dropdown"><a href="RealizarRetiro_Ca.jsp">Realizar Retiro</a></li>
                             
                            
                             <li class="dropdown">
@@ -31,11 +31,11 @@
                                 <ul class="dropdown-menu">
                                    
                                     <li class="dropdown-header">Reportes del Día</li>
-                                    <li><a href="">Listado de Dépositos y Retiros realizados durante su Turno</a></li>
+                                    <li><a href="Reporte1_Cajero.jsp">Listado de Dépositos y Retiros realizados durante su Turno</a></li>
                                    
                                     <li role="separator" class="divider"></li>
                                     <li class="dropdown-header">Reportes en un Intervalo de Tiempo</li>
-                                    <li><a href="">Listado de las Transacciones Realizadas por día en un Intervalo de Tiempo</a></li>
+                                    <li><a href="Reporte2_Cajero.jsp">Listado de las Transacciones Realizadas por día en un Intervalo de Tiempo</a></li>
                                    
                                 </ul>
                             </li>

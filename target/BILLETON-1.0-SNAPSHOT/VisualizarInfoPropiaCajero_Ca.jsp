@@ -14,20 +14,20 @@
     <%@ include file = "HeaderGeneral.html" %>
     <body>
 
-         <% if((int)request.getSession().getAttribute("codigoUsuario") != 0 && (int)request.getSession().getAttribute("tipoUsuario") == 2) {
-    %>
+        <% if ((int) request.getSession().getAttribute("codigoUsuario") != 0 && (int) request.getSession().getAttribute("tipoUsuario") == 2) {
+        %>
         <%@ include file = "NavBarCajero.jsp"%>
-       
+
         <div class="container" style="padding-top: 50px" >
 
             <h1 class="align-content-lg-center"><strong>Perfil del Cajero <%=request.getSession().getAttribute("nombreUsuario")%></strong></h1>
-        
-             
+
+
             <h2 class="align-content-lg-center">Datos de la Cuenta de Usuario:</h2>
-              
-              
-             
-        
+
+
+
+
             <div class="row">
 
                 <div class="form-group col-md-4">
@@ -83,24 +83,24 @@
 
 
         </div>
- <CENTER>
+    <CENTER>
 
-                             <a href="InicioCajero.jsp" class="btn btn-primary">Volver al Inicio</a>
+        <a href="InicioCajero.jsp" class="btn btn-primary">Volver al Inicio</a>
 
-                </CENTER>
- 
+    </CENTER>
 
 
-       
-       <% } else if((int)request.getSession().getAttribute("codigoUsuario") != 0 && (int)request.getSession().getAttribute("tipoUsuario") == 1) { %>
-        <% response.sendRedirect(request.getContextPath()+"/InicioGerente.jsp"); %>
-        <% } else if((int)request.getSession().getAttribute("codigoUsuario") != 0 && (int)request.getSession().getAttribute("tipoUsuario") == 3) { %>
-        <% response.sendRedirect(request.getContextPath()+"/InicioCliente.jsp"); %>
-        <% } else { %>
-    <% response.sendRedirect(request.getContextPath()+"/Login.jsp");
-         %>
-        <% }%>
-        <%@ include file = "FooterGeneral.html" %>
 
-    </body>
+
+    <% } else if ((int) request.getSession().getAttribute("codigoUsuario") != 0 && (int) request.getSession().getAttribute("tipoUsuario") == 1) { %>
+    <% response.sendRedirect(request.getContextPath() + "/InicioGerente.jsp"); %>
+    <% } else if ((int) request.getSession().getAttribute("codigoUsuario") != 0 && (int) request.getSession().getAttribute("tipoUsuario") == 3) { %>
+    <% response.sendRedirect(request.getContextPath() + "/InicioCliente.jsp"); %>
+    <% } else { %>
+    <% response.sendRedirect(request.getContextPath() + "/Login.jsp");
+    %>
+    <% }%>
+    <%@ include file = "FooterGeneral.html" %>
+
+</body>
 </html>

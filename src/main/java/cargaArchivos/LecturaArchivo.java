@@ -80,27 +80,6 @@ public class LecturaArchivo {
             etiquetaClienteDB(listadoClientes);
             etiquetaTransaccionDB(listadoTransacciones);
 
-            /*
-            NodeList listadoExamen = documento.getElementsByTagName("examen");
-            NodeList listaAdmins = documento.getElementsByTagName("admin");
-            NodeList listaPaciente = documento.getElementsByTagName("paciente");
-            NodeList listaDoctores = documento.getElementsByTagName("doctor");
-            NodeList listaLaboratoristas = documento.getElementsByTagName("laboratorista");
-            NodeList listadoConsulta = documento.getElementsByTagName("consulta");
-            NodeList listadoInforme = documento.getElementsByTagName("reporte");
-            NodeList listadoResultado = documento.getElementsByTagName("resultado");
-            NodeList listadoCitaMedica = documento.getElementsByTagName("cita");
-
-            etiquetaExamenDB(listadoExamen);
-            etiquetaAdminDB(listaAdmins);
-            etiquetaPacienteDB(listaPaciente);
-            etiquetaDoctorDB(listaDoctores);
-            etiquetaLaboratoristaDB(listaLaboratoristas);
-            etiquetaConsultaDB(listadoConsulta);
-            etiquetaInformeDB(listadoInforme);
-            etiquetaResultadoDB(listadoResultado);
-            etiquetaCitaMedicaDB(listadoCitaMedica);
-             */
         } catch (ParserConfigurationException | SAXException | IOException ex) {
             System.out.println(ex.getMessage());
         }
@@ -254,7 +233,7 @@ public class LecturaArchivo {
 
                          if (hijo.getNodeName().equalsIgnoreCase("CUENTAS")) {
                             cuentas = etiquetaCuentasDelCliente(hijo);
-                            //especialidades = tagEspecialidad(hijo);
+                            
 
                         } else {
                             

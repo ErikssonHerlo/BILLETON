@@ -27,7 +27,7 @@
                                 <ul class="dropdown-menu">
                       
                                     <li class="dropdown-header">Cuentas Propias</li>
-                                    <li><a href="">Transferencia a Cuenta Propia</a></li>
+                                    <li><a href="ObtenerCuentasPropias">Transferencia a Cuenta Propia</a></li>
                                     
                                     <li role="separator" class="divider"></li>
                                     <li class="dropdown-header">Cuentas de Terceros</li>
